@@ -1,0 +1,882 @@
+/*
+@TargetNode='localhost'
+@GeneratedBy=sergeype
+@GenerationDate=12/30/2024 14:42:51
+@GenerationHost=GIGA2GBNVME2023
+*/
+
+instance of MSFT_AccountPolicy as $MSFT_AccountPolicy1ref
+{
+Store_passwords_using_reversible_encryption = "Disabled";
+ ResourceID = "[AccountPolicy]AccountPolicies";
+ ModuleVersion = "2.10.0.0";
+ Name = "PasswordPolicies";
+ Minimum_Password_Age = 2;
+ ModuleName = "SecurityPolicyDsc";
+ Maximum_Password_Age = 50;
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::53::9::AccountPolicy";
+ Minimum_Password_Length = 14;
+ Enforce_password_history = 24;
+ Password_must_meet_complexity_requirements = "Enabled";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment1ref
+{
+ResourceID = "[UserRightsAssignment]Takeownershipoffilesorotherobjects";
+ Policy = "Take_ownership_of_files_or_other_objects";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::97::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment2ref
+{
+ResourceID = "[UserRightsAssignment]Forceshutdownfromaremotesystem";
+ Policy = "Force_shutdown_from_a_remote_system";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::105::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment3ref
+{
+ResourceID = "[UserRightsAssignment]Shutdownthesystem";
+ Policy = "Shut_down_the_system";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::113::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment4ref
+{
+ResourceID = "[UserRightsAssignment]Restorefilesanddirectories";
+ Policy = "Restore_files_and_directories";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::121::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment5ref
+{
+ResourceID = "[UserRightsAssignment]Replaceaprocessleveltoken";
+ Policy = "Replace_a_process_level_token";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "LOCAL SERVICE, NETWORK SERVICE"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::129::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment6ref
+{
+ResourceID = "[UserRightsAssignment]Increaseaprocessworkingset";
+ Policy = "Increase_a_process_working_set";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators,  Local Service"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::137::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment7ref
+{
+ResourceID = "[UserRightsAssignment]Profilesystemperformance";
+ Policy = "Profile_system_performance";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators, NT SERVICE\\WdiServiceHost"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::145::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment8ref
+{
+ResourceID = "[UserRightsAssignment]Profilesingleprocess";
+ Policy = "Profile_single_process";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::153::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment9ref
+{
+ResourceID = "[UserRightsAssignment]Performvolumemaintenancetasks";
+ Policy = "Perform_volume_maintenance_tasks";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::161::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment10ref
+{
+ResourceID = "[UserRightsAssignment]Modifyfirmwareenvironmentvalues";
+ Policy = "Modify_firmware_environment_values";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::169::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment11ref
+{
+ResourceID = "[UserRightsAssignment]Modifyanobjectlabel";
+ Policy = "Modify_an_object_label";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "No One"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::177::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment12ref
+{
+ResourceID = "[UserRightsAssignment]Lockpagesinmemory";
+ Policy = "Lock_pages_in_memory";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "No One"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::185::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment13ref
+{
+ResourceID = "[UserRightsAssignment]Accessthiscomputerfromthenetwork";
+ Policy = "Access_this_computer_from_the_network";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators, Authenticated Users"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::193::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment14ref
+{
+ResourceID = "[UserRightsAssignment]Loadandunloaddevicedrivers";
+ Policy = "Load_and_unload_device_drivers";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::201::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment15ref
+{
+ResourceID = "[UserRightsAssignment]DenylogonthroughRemoteDesktopServices";
+ Policy = "Deny_log_on_through_Remote_Desktop_Services";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Guests, Local account"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::212::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment16ref
+{
+ResourceID = "[UserRightsAssignment]Denylogonasaservice";
+ Policy = "Deny_log_on_as_a_service";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Guests"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::220::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment17ref
+{
+ResourceID = "[UserRightsAssignment]Denylogonasabatchjob";
+ Policy = "Deny_log_on_as_a_batch_job";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Guests"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::228::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment18ref
+{
+ResourceID = "[UserRightsAssignment]Createpermanentsharedobjects";
+ Policy = "Create_permanent_shared_objects";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "No One"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::236::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment19ref
+{
+ResourceID = "[UserRightsAssignment]Createglobalobjects";
+ Policy = "Create_global_objects";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators, LOCAL SERVICE, NETWORK SERVICE, SERVICE"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::244::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment20ref
+{
+ResourceID = "[UserRightsAssignment]Createatokenobject";
+ Policy = "Create_a_token_object";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "No One"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::252::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment21ref
+{
+ResourceID = "[UserRightsAssignment]Createapagefile";
+ Policy = "Create_a_pagefile";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::261::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment22ref
+{
+ResourceID = "[UserRightsAssignment]Bypasstraversechecking";
+ Policy = "Bypass_traverse_checking";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators, Authenticated Users, Backup Operators, Local Service, Network Service"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::269::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment23ref
+{
+ResourceID = "[UserRightsAssignment]Changethetimezone";
+ Policy = "Change_the_time_zone";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators, LOCAL SERVICE"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::277::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment24ref
+{
+ResourceID = "[UserRightsAssignment]Backupfilesanddirectories";
+ Policy = "Back_up_files_and_directories";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::285::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment25ref
+{
+ResourceID = "[UserRightsAssignment]Actaspartoftheoperatingsystem";
+ Policy = "Act_as_part_of_the_operating_system";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "No One"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::293::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment26ref
+{
+ResourceID = "[UserRightsAssignment]AccessCredentialManagerasatrustedcaller";
+ Policy = "Access_Credential_Manager_as_a_trusted_caller";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "No One"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::301::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment27ref
+{
+ResourceID = "[UserRightsAssignment]Createsymboliclinks";
+ Policy = "Create_symbolic_links";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators, NT VIRTUAL MACHINE\\Virtual Machines"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::309::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment28ref
+{
+ResourceID = "[UserRightsAssignment]Allowlogonlocally";
+ Policy = "Allow_log_on_locally";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::317::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment29ref
+{
+ResourceID = "[UserRightsAssignment]Generatesecurityaudits";
+ Policy = "Generate_security_audits";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "LOCAL SERVICE, NETWORK SERVICE"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::325::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment30ref
+{
+ResourceID = "[UserRightsAssignment]Denylogonlocally";
+ Policy = "Deny_log_on_locally";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Guests"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::333::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment31ref
+{
+ResourceID = "[UserRightsAssignment]Changethesystemtime";
+ Policy = "Change_the_system_time";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators, LOCAL SERVICE"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::341::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment32ref
+{
+ResourceID = "[UserRightsAssignment]Manageauditingandsecuritylog";
+ Policy = "Manage_auditing_and_security_log";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::349::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment33ref
+{
+ResourceID = "[UserRightsAssignment]Enablecomputeranduseraccountstobetrustedfordelegation";
+ Policy = "Enable_computer_and_user_accounts_to_be_trusted_for_delegation";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::357::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment34ref
+{
+ResourceID = "[UserRightsAssignment]Denyaccesstothiscomputerfromthenetwork";
+ Policy = "Deny_access_to_this_computer_from_the_network";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Guests"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::365::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment35ref
+{
+ResourceID = "[UserRightsAssignment]Increaseschedulingpriority";
+ Policy = "Increase_scheduling_priority";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::373::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment36ref
+{
+ResourceID = "[UserRightsAssignment]AllowlogonthroughRemoteDesktopServices";
+ Policy = "Allow_log_on_through_Remote_Desktop_Services";
+ ModuleVersion = "2.10.0.0";
+ Identity = {
+    "Administrators"
+};
+ ModuleName = "SecurityPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::382::9::UserRightsAssignment";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory1ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Group Membership (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Group Membership";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::390::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory2ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Authentication Policy Change (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Authentication Policy Change";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::398::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory3ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Audit Policy Change (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Audit Policy change";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::407::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory4ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Process Creation (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "process creation";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::416::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory5ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Other Object Access Events (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Other Object Access Events";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::425::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory6ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Other Object Access Events (Failure)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Other Object Access Events";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::430::9::AuditPolicySubcategory";
+ AuditFlag = "Failure";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory7ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit MPSSVC Rule-Level Policy Change (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "MPSSVC Rule-Level Policy Change";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::438::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory8ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit MPSSVC Rule-Level Policy Change (Failure)";
+ ModuleVersion = "1.4.0.0";
+ Name = "MPSSVC Rule-Level Policy Change";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::443::9::AuditPolicySubcategory";
+ AuditFlag = "Failure";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory9ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Account Lockout (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Account Lockout";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::451::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory10ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Account Lockout (Failure)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Account Lockout";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::456::9::AuditPolicySubcategory";
+ AuditFlag = "Failure";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory11ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Logon (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Logon";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::464::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory12ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Logon (Failure)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Logon";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::470::9::AuditPolicySubcategory";
+ AuditFlag = "Failure";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory13ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Credential Validation (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Credential Validation";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::478::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory14ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Credential Validation (Failure)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Credential Validation";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::483::9::AuditPolicySubcategory";
+ AuditFlag = "Failure";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory15ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit System Integrity (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "System Integrity";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::491::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory16ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit System Integrity (Failure)";
+ ModuleVersion = "1.4.0.0";
+ Name = "System Integrity";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::496::9::AuditPolicySubcategory";
+ AuditFlag = "Failure";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory17ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Special Logon (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Special Logon";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::504::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory18ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit PNP Activity (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Plug and Play Events";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::512::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory19ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Other Logon/Logoff Events (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Other Logon/Logoff Events";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::520::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory20ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Other Logon/Logoff Events (Failure)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Other Logon/Logoff Events";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::525::9::AuditPolicySubcategory";
+ AuditFlag = "Failure";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory21ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Logoff (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Logoff";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::533::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory22ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Sensitive Privilege Use (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Sensitive Privilege Use";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::542::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory23ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Sensitive Privilege Use (Failure)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Sensitive Privilege Use";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::548::9::AuditPolicySubcategory";
+ AuditFlag = "Failure";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory24ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit User Account Management (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "User Account Management";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::556::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory25ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit User Account Management (Failure)";
+ ModuleVersion = "1.4.0.0";
+ Name = "User Account Management";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::561::9::AuditPolicySubcategory";
+ AuditFlag = "Failure";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory26ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Security System Extension (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Security System Extension";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::569::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory27ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Security System Extension (Failure)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Security System Extension";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::575::9::AuditPolicySubcategory";
+ AuditFlag = "Failure";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory28ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Security State Change (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Security State Change";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::583::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory29ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Security Group Management (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Security Group Management";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::592::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory30ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Security Group Management (Failure)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Security Group Management";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::597::9::AuditPolicySubcategory";
+ AuditFlag = "Failure";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory31ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Removable Storage (Success)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Removable Storage";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::606::9::AuditPolicySubcategory";
+ AuditFlag = "Success";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory32ref
+{
+ResourceID = "[AuditPolicySubcategory]Audit Removable Storage (Failure)";
+ ModuleVersion = "1.4.0.0";
+ Name = "Removable Storage";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::611::9::AuditPolicySubcategory";
+ AuditFlag = "Failure";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource1ref
+{
+Key = "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Wsearch";
+ ResourceID = "[Registry]Disable Windows Search Service";
+ ValueType = "DWord";
+ ModuleVersion = "2.12.0.0";
+ ValueName = "Start";
+ ModuleName = "PSDscResources";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::622::10::Registry";
+ Ensure = "Present";
+ ValueData = {
+    "4"
+};
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_SecurityOption as $MSFT_SecurityOption1ref
+{
+ModuleName = "SecurityPolicyDsc";
+ Microsoft_network_server_Digitally_sign_communications_if_client_agrees = "Enabled";
+ Interactive_logon_Do_not_display_last_user_name = "Enabled";
+ User_Account_Control_Behavior_of_the_elevation_prompt_for_administrators_in_Admin_Approval_Mode = "Prompt for consent on the secure desktop";
+ Name = "AccountSecurityOptions";
+ Microsoft_network_server_Amount_of_idle_time_required_before_suspending_session = "15";
+ Network_access_Remotely_accessible_registry_paths_and_subpaths = "System\\CurrentControlSet\\Control\\Print\\Printers|#|System\\CurrentControlSet\\Services\\Eventlog|#|Software\\Microsoft\\OLAP Server|#|Software\\Microsoft\\Windows NT\\CurrentVersion\\Print|#|Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows|#|System\\CurrentControlSet\\Control\\ContentIndex|#|System\\CurrentControlSet\\Control\\Terminal Server|#|System\\CurrentControlSet\\Control\\Terminal Server\\UserConfig|#|System\\CurrentControlSet\\Control\\Terminal Server\\DefaultUserConfiguration|#|Software\\Microsoft\\Windows NT\\CurrentVersion\\Perflib|#|System\\CurrentControlSet\\Services\\SysmonLog";
+ Microsoft_network_server_Digitally_sign_communications_always = "Enabled";
+ Network_access_Sharing_and_security_model_for_local_accounts = "Classic - Local users authenticate as themselves";
+ Microsoft_network_server_Disconnect_clients_when_logon_hours_expire = "Enabled";
+ Microsoft_network_client_Digitally_sign_communications_if_server_agrees = "Enabled";
+ Devices_Allow_undock_without_having_to_log_on = "Disabled";
+ Network_security_Allow_Local_System_to_use_computer_identity_for_NTLM = "Enabled";
+ Microsoft_network_client_Digitally_sign_communications_always = "Enabled";
+ Network_security_LDAP_client_signing_requirements = "Negotiate Signing";
+ Network_security_Allow_LocalSystem_NULL_session_fallback = "Disabled";
+ Accounts_Limit_local_account_use_of_blank_passwords_to_console_logon_only = "Enabled";
+ Network_Security_Allow_PKU2U_authentication_requests_to_this_computer_to_use_online_identities = "Disabled";
+ ResourceID = "[SecurityOption]AccountSecurityOptions";
+ Network_access_Remotely_accessible_registry_paths = "System\\CurrentControlSet\\Control\\ProductOptions|#|System\\CurrentControlSet\\Control\\Server Applications|#|Software\\Microsoft\\Windows NT\\CurrentVersion";
+ Microsoft_network_client_Send_unencrypted_password_to_third_party_SMB_servers = "Disabled";
+ Devices_Prevent_users_from_installing_printer_drivers = "Enabled";
+ Network_security_Configure_encryption_types_allowed_for_Kerberos = {
+    "DES_CBC_CRC",
+    "DES_CBC_MD5",
+    "RC4_HMAC_MD5",
+    "AES128_HMAC_SHA1",
+    "AES256_HMAC_SHA1",
+    "FUTURE"
+};
+ System_settings_Use_Certificate_Rules_on_Windows_Executables_for_Software_Restriction_Policies = "Enabled";
+ ModuleVersion = "2.10.0.0";
+ Interactive_logon_Do_not_require_CTRL_ALT_DEL = "Disabled";
+ Audit_Force_audit_policy_subcategory_settings_Windows_Vista_or_later_to_override_audit_policy_category_settings = "Enabled";
+ Devices_Allowed_to_format_and_eject_removable_media = "Administrators";
+ Audit_Shut_down_system_immediately_if_unable_to_log_security_audits = "Disabled";
+ Network_access_Let_Everyone_permissions_apply_to_anonymous_users = "Disabled";
+ Shutdown_Allow_system_to_be_shut_down_without_having_to_log_on = "Disabled";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::630::9::SecurityOption";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of OMI_ConfigurationDocument
+
+                    {
+ Version="2.0.0";
+
+                        MinimumCompatibleVersion = "1.0.0";
+
+                        CompatibleVersionAdditionalProperties= {"Omi_BaseResource:ConfigurationName"};
+
+                        Author="sergeype";
+
+                        GenerationDate="12/30/2024 14:42:51";
+
+                        GenerationHost="GIGA2GBNVME2023";
+
+                        Name="AzureBaselineDscWindows2019";
+
+                    };
