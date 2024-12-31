@@ -1,29 +1,29 @@
 /*
 @TargetNode='localhost'
 @GeneratedBy=sergeype
-@GenerationDate=12/30/2024 14:42:51
+@GenerationDate=12/31/2024 13:17:17
 @GenerationHost=GIGA2GBNVME2023
 */
 
 instance of MSFT_AccountPolicy as $MSFT_AccountPolicy1ref
 {
-Store_passwords_using_reversible_encryption = "Disabled";
- ResourceID = "[AccountPolicy]AccountPolicies";
- ModuleVersion = "2.10.0.0";
- Name = "PasswordPolicies";
- Minimum_Password_Age = 2;
+Password_must_meet_complexity_requirements = "Enabled";
+ Minimum_Password_Length = 14;
  ModuleName = "SecurityPolicyDsc";
  Maximum_Password_Age = 50;
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::53::9::AccountPolicy";
- Minimum_Password_Length = 14;
  Enforce_password_history = 24;
- Password_must_meet_complexity_requirements = "Enabled";
+ Store_passwords_using_reversible_encryption = "Disabled";
+ ModuleVersion = "2.10.0.0";
+ ResourceID = "[AccountPolicy]AccountPolicies";
+ Name = "PasswordPolicies";
+ Minimum_Password_Age = 2;
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::53::9::AccountPolicy";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment1ref
 {
-ResourceID = "[UserRightsAssignment]Takeownershipoffilesorotherobjects";
- Policy = "Take_ownership_of_files_or_other_objects";
+Policy = "Take_ownership_of_files_or_other_objects";
+ ResourceID = "[UserRightsAssignment]Takeownershipoffilesorotherobjects";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -34,8 +34,8 @@ ResourceID = "[UserRightsAssignment]Takeownershipoffilesorotherobjects";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment2ref
 {
-ResourceID = "[UserRightsAssignment]Forceshutdownfromaremotesystem";
- Policy = "Force_shutdown_from_a_remote_system";
+Policy = "Force_shutdown_from_a_remote_system";
+ ResourceID = "[UserRightsAssignment]Forceshutdownfromaremotesystem";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -46,8 +46,8 @@ ResourceID = "[UserRightsAssignment]Forceshutdownfromaremotesystem";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment3ref
 {
-ResourceID = "[UserRightsAssignment]Shutdownthesystem";
- Policy = "Shut_down_the_system";
+Policy = "Shut_down_the_system";
+ ResourceID = "[UserRightsAssignment]Shutdownthesystem";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -58,8 +58,8 @@ ResourceID = "[UserRightsAssignment]Shutdownthesystem";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment4ref
 {
-ResourceID = "[UserRightsAssignment]Restorefilesanddirectories";
- Policy = "Restore_files_and_directories";
+Policy = "Restore_files_and_directories";
+ ResourceID = "[UserRightsAssignment]Restorefilesanddirectories";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -70,8 +70,8 @@ ResourceID = "[UserRightsAssignment]Restorefilesanddirectories";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment5ref
 {
-ResourceID = "[UserRightsAssignment]Replaceaprocessleveltoken";
- Policy = "Replace_a_process_level_token";
+Policy = "Replace_a_process_level_token";
+ ResourceID = "[UserRightsAssignment]Replaceaprocessleveltoken";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "LOCAL SERVICE, NETWORK SERVICE"
@@ -82,8 +82,8 @@ ResourceID = "[UserRightsAssignment]Replaceaprocessleveltoken";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment6ref
 {
-ResourceID = "[UserRightsAssignment]Increaseaprocessworkingset";
- Policy = "Increase_a_process_working_set";
+Policy = "Increase_a_process_working_set";
+ ResourceID = "[UserRightsAssignment]Increaseaprocessworkingset";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators,  Local Service"
@@ -94,8 +94,8 @@ ResourceID = "[UserRightsAssignment]Increaseaprocessworkingset";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment7ref
 {
-ResourceID = "[UserRightsAssignment]Profilesystemperformance";
- Policy = "Profile_system_performance";
+Policy = "Profile_system_performance";
+ ResourceID = "[UserRightsAssignment]Profilesystemperformance";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators, NT SERVICE\\WdiServiceHost"
@@ -106,8 +106,8 @@ ResourceID = "[UserRightsAssignment]Profilesystemperformance";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment8ref
 {
-ResourceID = "[UserRightsAssignment]Profilesingleprocess";
- Policy = "Profile_single_process";
+Policy = "Profile_single_process";
+ ResourceID = "[UserRightsAssignment]Profilesingleprocess";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -118,8 +118,8 @@ ResourceID = "[UserRightsAssignment]Profilesingleprocess";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment9ref
 {
-ResourceID = "[UserRightsAssignment]Performvolumemaintenancetasks";
- Policy = "Perform_volume_maintenance_tasks";
+Policy = "Perform_volume_maintenance_tasks";
+ ResourceID = "[UserRightsAssignment]Performvolumemaintenancetasks";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -130,8 +130,8 @@ ResourceID = "[UserRightsAssignment]Performvolumemaintenancetasks";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment10ref
 {
-ResourceID = "[UserRightsAssignment]Modifyfirmwareenvironmentvalues";
- Policy = "Modify_firmware_environment_values";
+Policy = "Modify_firmware_environment_values";
+ ResourceID = "[UserRightsAssignment]Modifyfirmwareenvironmentvalues";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -142,8 +142,8 @@ ResourceID = "[UserRightsAssignment]Modifyfirmwareenvironmentvalues";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment11ref
 {
-ResourceID = "[UserRightsAssignment]Modifyanobjectlabel";
- Policy = "Modify_an_object_label";
+Policy = "Modify_an_object_label";
+ ResourceID = "[UserRightsAssignment]Modifyanobjectlabel";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "No One"
@@ -154,8 +154,8 @@ ResourceID = "[UserRightsAssignment]Modifyanobjectlabel";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment12ref
 {
-ResourceID = "[UserRightsAssignment]Lockpagesinmemory";
- Policy = "Lock_pages_in_memory";
+Policy = "Lock_pages_in_memory";
+ ResourceID = "[UserRightsAssignment]Lockpagesinmemory";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "No One"
@@ -166,8 +166,8 @@ ResourceID = "[UserRightsAssignment]Lockpagesinmemory";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment13ref
 {
-ResourceID = "[UserRightsAssignment]Accessthiscomputerfromthenetwork";
- Policy = "Access_this_computer_from_the_network";
+Policy = "Access_this_computer_from_the_network";
+ ResourceID = "[UserRightsAssignment]Accessthiscomputerfromthenetwork";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators, Authenticated Users"
@@ -178,8 +178,8 @@ ResourceID = "[UserRightsAssignment]Accessthiscomputerfromthenetwork";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment14ref
 {
-ResourceID = "[UserRightsAssignment]Loadandunloaddevicedrivers";
- Policy = "Load_and_unload_device_drivers";
+Policy = "Load_and_unload_device_drivers";
+ ResourceID = "[UserRightsAssignment]Loadandunloaddevicedrivers";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -190,8 +190,8 @@ ResourceID = "[UserRightsAssignment]Loadandunloaddevicedrivers";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment15ref
 {
-ResourceID = "[UserRightsAssignment]DenylogonthroughRemoteDesktopServices";
- Policy = "Deny_log_on_through_Remote_Desktop_Services";
+Policy = "Deny_log_on_through_Remote_Desktop_Services";
+ ResourceID = "[UserRightsAssignment]DenylogonthroughRemoteDesktopServices";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Guests, Local account"
@@ -202,8 +202,8 @@ ResourceID = "[UserRightsAssignment]DenylogonthroughRemoteDesktopServices";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment16ref
 {
-ResourceID = "[UserRightsAssignment]Denylogonasaservice";
- Policy = "Deny_log_on_as_a_service";
+Policy = "Deny_log_on_as_a_service";
+ ResourceID = "[UserRightsAssignment]Denylogonasaservice";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Guests"
@@ -214,8 +214,8 @@ ResourceID = "[UserRightsAssignment]Denylogonasaservice";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment17ref
 {
-ResourceID = "[UserRightsAssignment]Denylogonasabatchjob";
- Policy = "Deny_log_on_as_a_batch_job";
+Policy = "Deny_log_on_as_a_batch_job";
+ ResourceID = "[UserRightsAssignment]Denylogonasabatchjob";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Guests"
@@ -226,8 +226,8 @@ ResourceID = "[UserRightsAssignment]Denylogonasabatchjob";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment18ref
 {
-ResourceID = "[UserRightsAssignment]Createpermanentsharedobjects";
- Policy = "Create_permanent_shared_objects";
+Policy = "Create_permanent_shared_objects";
+ ResourceID = "[UserRightsAssignment]Createpermanentsharedobjects";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "No One"
@@ -238,8 +238,8 @@ ResourceID = "[UserRightsAssignment]Createpermanentsharedobjects";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment19ref
 {
-ResourceID = "[UserRightsAssignment]Createglobalobjects";
- Policy = "Create_global_objects";
+Policy = "Create_global_objects";
+ ResourceID = "[UserRightsAssignment]Createglobalobjects";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators, LOCAL SERVICE, NETWORK SERVICE, SERVICE"
@@ -250,8 +250,8 @@ ResourceID = "[UserRightsAssignment]Createglobalobjects";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment20ref
 {
-ResourceID = "[UserRightsAssignment]Createatokenobject";
- Policy = "Create_a_token_object";
+Policy = "Create_a_token_object";
+ ResourceID = "[UserRightsAssignment]Createatokenobject";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "No One"
@@ -262,8 +262,8 @@ ResourceID = "[UserRightsAssignment]Createatokenobject";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment21ref
 {
-ResourceID = "[UserRightsAssignment]Createapagefile";
- Policy = "Create_a_pagefile";
+Policy = "Create_a_pagefile";
+ ResourceID = "[UserRightsAssignment]Createapagefile";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -274,8 +274,8 @@ ResourceID = "[UserRightsAssignment]Createapagefile";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment22ref
 {
-ResourceID = "[UserRightsAssignment]Bypasstraversechecking";
- Policy = "Bypass_traverse_checking";
+Policy = "Bypass_traverse_checking";
+ ResourceID = "[UserRightsAssignment]Bypasstraversechecking";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators, Authenticated Users, Backup Operators, Local Service, Network Service"
@@ -286,8 +286,8 @@ ResourceID = "[UserRightsAssignment]Bypasstraversechecking";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment23ref
 {
-ResourceID = "[UserRightsAssignment]Changethetimezone";
- Policy = "Change_the_time_zone";
+Policy = "Change_the_time_zone";
+ ResourceID = "[UserRightsAssignment]Changethetimezone";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators, LOCAL SERVICE"
@@ -298,8 +298,8 @@ ResourceID = "[UserRightsAssignment]Changethetimezone";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment24ref
 {
-ResourceID = "[UserRightsAssignment]Backupfilesanddirectories";
- Policy = "Back_up_files_and_directories";
+Policy = "Back_up_files_and_directories";
+ ResourceID = "[UserRightsAssignment]Backupfilesanddirectories";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -310,8 +310,8 @@ ResourceID = "[UserRightsAssignment]Backupfilesanddirectories";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment25ref
 {
-ResourceID = "[UserRightsAssignment]Actaspartoftheoperatingsystem";
- Policy = "Act_as_part_of_the_operating_system";
+Policy = "Act_as_part_of_the_operating_system";
+ ResourceID = "[UserRightsAssignment]Actaspartoftheoperatingsystem";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "No One"
@@ -322,8 +322,8 @@ ResourceID = "[UserRightsAssignment]Actaspartoftheoperatingsystem";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment26ref
 {
-ResourceID = "[UserRightsAssignment]AccessCredentialManagerasatrustedcaller";
- Policy = "Access_Credential_Manager_as_a_trusted_caller";
+Policy = "Access_Credential_Manager_as_a_trusted_caller";
+ ResourceID = "[UserRightsAssignment]AccessCredentialManagerasatrustedcaller";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "No One"
@@ -334,8 +334,8 @@ ResourceID = "[UserRightsAssignment]AccessCredentialManagerasatrustedcaller";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment27ref
 {
-ResourceID = "[UserRightsAssignment]Createsymboliclinks";
- Policy = "Create_symbolic_links";
+Policy = "Create_symbolic_links";
+ ResourceID = "[UserRightsAssignment]Createsymboliclinks";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators, NT VIRTUAL MACHINE\\Virtual Machines"
@@ -346,8 +346,8 @@ ResourceID = "[UserRightsAssignment]Createsymboliclinks";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment28ref
 {
-ResourceID = "[UserRightsAssignment]Allowlogonlocally";
- Policy = "Allow_log_on_locally";
+Policy = "Allow_log_on_locally";
+ ResourceID = "[UserRightsAssignment]Allowlogonlocally";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -358,8 +358,8 @@ ResourceID = "[UserRightsAssignment]Allowlogonlocally";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment29ref
 {
-ResourceID = "[UserRightsAssignment]Generatesecurityaudits";
- Policy = "Generate_security_audits";
+Policy = "Generate_security_audits";
+ ResourceID = "[UserRightsAssignment]Generatesecurityaudits";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "LOCAL SERVICE, NETWORK SERVICE"
@@ -370,8 +370,8 @@ ResourceID = "[UserRightsAssignment]Generatesecurityaudits";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment30ref
 {
-ResourceID = "[UserRightsAssignment]Denylogonlocally";
- Policy = "Deny_log_on_locally";
+Policy = "Deny_log_on_locally";
+ ResourceID = "[UserRightsAssignment]Denylogonlocally";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Guests"
@@ -382,8 +382,8 @@ ResourceID = "[UserRightsAssignment]Denylogonlocally";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment31ref
 {
-ResourceID = "[UserRightsAssignment]Changethesystemtime";
- Policy = "Change_the_system_time";
+Policy = "Change_the_system_time";
+ ResourceID = "[UserRightsAssignment]Changethesystemtime";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators, LOCAL SERVICE"
@@ -394,8 +394,8 @@ ResourceID = "[UserRightsAssignment]Changethesystemtime";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment32ref
 {
-ResourceID = "[UserRightsAssignment]Manageauditingandsecuritylog";
- Policy = "Manage_auditing_and_security_log";
+Policy = "Manage_auditing_and_security_log";
+ ResourceID = "[UserRightsAssignment]Manageauditingandsecuritylog";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -406,8 +406,8 @@ ResourceID = "[UserRightsAssignment]Manageauditingandsecuritylog";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment33ref
 {
-ResourceID = "[UserRightsAssignment]Enablecomputeranduseraccountstobetrustedfordelegation";
- Policy = "Enable_computer_and_user_accounts_to_be_trusted_for_delegation";
+Policy = "Enable_computer_and_user_accounts_to_be_trusted_for_delegation";
+ ResourceID = "[UserRightsAssignment]Enablecomputeranduseraccountstobetrustedfordelegation";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -418,8 +418,8 @@ ResourceID = "[UserRightsAssignment]Enablecomputeranduseraccountstobetrustedford
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment34ref
 {
-ResourceID = "[UserRightsAssignment]Denyaccesstothiscomputerfromthenetwork";
- Policy = "Deny_access_to_this_computer_from_the_network";
+Policy = "Deny_access_to_this_computer_from_the_network";
+ ResourceID = "[UserRightsAssignment]Denyaccesstothiscomputerfromthenetwork";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Guests"
@@ -430,8 +430,8 @@ ResourceID = "[UserRightsAssignment]Denyaccesstothiscomputerfromthenetwork";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment35ref
 {
-ResourceID = "[UserRightsAssignment]Increaseschedulingpriority";
- Policy = "Increase_scheduling_priority";
+Policy = "Increase_scheduling_priority";
+ ResourceID = "[UserRightsAssignment]Increaseschedulingpriority";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -442,8 +442,8 @@ ResourceID = "[UserRightsAssignment]Increaseschedulingpriority";
 };
 instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment36ref
 {
-ResourceID = "[UserRightsAssignment]AllowlogonthroughRemoteDesktopServices";
- Policy = "Allow_log_on_through_Remote_Desktop_Services";
+Policy = "Allow_log_on_through_Remote_Desktop_Services";
+ ResourceID = "[UserRightsAssignment]AllowlogonthroughRemoteDesktopServices";
  ModuleVersion = "2.10.0.0";
  Identity = {
     "Administrators"
@@ -454,395 +454,384 @@ ResourceID = "[UserRightsAssignment]AllowlogonthroughRemoteDesktopServices";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory1ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Group Membership (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Group Membership";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::390::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Group Membership (Success)";
+ Name = "Group Membership";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::390::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory2ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Authentication Policy Change (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Authentication Policy Change";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::398::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Authentication Policy Change (Success)";
+ Name = "Authentication Policy Change";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::398::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory3ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Audit Policy Change (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Audit Policy change";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::407::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Audit Policy Change (Success)";
+ Name = "Audit Policy change";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::407::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory4ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Process Creation (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "process creation";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::416::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Process Creation (Success)";
+ Name = "process creation";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::416::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory5ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Other Object Access Events (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Other Object Access Events";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::425::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Other Object Access Events (Success)";
+ Name = "Other Object Access Events";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::425::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory6ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Other Object Access Events (Failure)";
- ModuleVersion = "1.4.0.0";
- Name = "Other Object Access Events";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Failure";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::430::9::AuditPolicySubcategory";
- AuditFlag = "Failure";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Other Object Access Events (Failure)";
+ Name = "Other Object Access Events";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::430::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory7ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit MPSSVC Rule-Level Policy Change (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "MPSSVC Rule-Level Policy Change";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::438::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit MPSSVC Rule-Level Policy Change (Success)";
+ Name = "MPSSVC Rule-Level Policy Change";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::438::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory8ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit MPSSVC Rule-Level Policy Change (Failure)";
- ModuleVersion = "1.4.0.0";
- Name = "MPSSVC Rule-Level Policy Change";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Failure";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::443::9::AuditPolicySubcategory";
- AuditFlag = "Failure";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit MPSSVC Rule-Level Policy Change (Failure)";
+ Name = "MPSSVC Rule-Level Policy Change";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::443::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory9ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Account Lockout (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Account Lockout";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::451::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Account Lockout (Success)";
+ Name = "Account Lockout";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::451::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory10ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Account Lockout (Failure)";
- ModuleVersion = "1.4.0.0";
- Name = "Account Lockout";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Failure";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::456::9::AuditPolicySubcategory";
- AuditFlag = "Failure";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Account Lockout (Failure)";
+ Name = "Account Lockout";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::456::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory11ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Logon (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Logon";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::464::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Logon (Success)";
+ Name = "Logon";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::464::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory12ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Logon (Failure)";
- ModuleVersion = "1.4.0.0";
- Name = "Logon";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Failure";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::470::9::AuditPolicySubcategory";
- AuditFlag = "Failure";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Logon (Failure)";
+ Name = "Logon";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::470::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory13ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Credential Validation (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Credential Validation";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::478::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Credential Validation (Success)";
+ Name = "Credential Validation";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::478::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory14ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Credential Validation (Failure)";
- ModuleVersion = "1.4.0.0";
- Name = "Credential Validation";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Failure";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::483::9::AuditPolicySubcategory";
- AuditFlag = "Failure";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Credential Validation (Failure)";
+ Name = "Credential Validation";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::483::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory15ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit System Integrity (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "System Integrity";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::491::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit System Integrity (Success)";
+ Name = "System Integrity";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::491::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory16ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit System Integrity (Failure)";
- ModuleVersion = "1.4.0.0";
- Name = "System Integrity";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Failure";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::496::9::AuditPolicySubcategory";
- AuditFlag = "Failure";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit System Integrity (Failure)";
+ Name = "System Integrity";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::496::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory17ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Special Logon (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Special Logon";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::504::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Special Logon (Success)";
+ Name = "Special Logon";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::504::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory18ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit PNP Activity (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Plug and Play Events";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::512::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit PNP Activity (Success)";
+ Name = "Plug and Play Events";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::512::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory19ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Other Logon/Logoff Events (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Other Logon/Logoff Events";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::520::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Other Logon/Logoff Events (Success)";
+ Name = "Other Logon/Logoff Events";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::520::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory20ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Other Logon/Logoff Events (Failure)";
- ModuleVersion = "1.4.0.0";
- Name = "Other Logon/Logoff Events";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Failure";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::525::9::AuditPolicySubcategory";
- AuditFlag = "Failure";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Other Logon/Logoff Events (Failure)";
+ Name = "Other Logon/Logoff Events";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::525::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory21ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Logoff (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Logoff";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::533::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Logoff (Success)";
+ Name = "Logoff";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::533::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory22ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Sensitive Privilege Use (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Sensitive Privilege Use";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::542::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Sensitive Privilege Use (Success)";
+ Name = "Sensitive Privilege Use";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::542::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory23ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Sensitive Privilege Use (Failure)";
- ModuleVersion = "1.4.0.0";
- Name = "Sensitive Privilege Use";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Failure";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::548::9::AuditPolicySubcategory";
- AuditFlag = "Failure";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Sensitive Privilege Use (Failure)";
+ Name = "Sensitive Privilege Use";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::548::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory24ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit User Account Management (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "User Account Management";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::556::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit User Account Management (Success)";
+ Name = "User Account Management";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::556::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory25ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit User Account Management (Failure)";
- ModuleVersion = "1.4.0.0";
- Name = "User Account Management";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Failure";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::561::9::AuditPolicySubcategory";
- AuditFlag = "Failure";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit User Account Management (Failure)";
+ Name = "User Account Management";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::561::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory26ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Security System Extension (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Security System Extension";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::569::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Security System Extension (Success)";
+ Name = "Security System Extension";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::569::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory27ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Security System Extension (Failure)";
- ModuleVersion = "1.4.0.0";
- Name = "Security System Extension";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Failure";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::575::9::AuditPolicySubcategory";
- AuditFlag = "Failure";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Security System Extension (Failure)";
+ Name = "Security System Extension";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::575::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory28ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Security State Change (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Security State Change";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::583::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Security State Change (Success)";
+ Name = "Security State Change";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::583::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory29ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Security Group Management (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Security Group Management";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::592::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Security Group Management (Success)";
+ Name = "Security Group Management";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::592::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory30ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Security Group Management (Failure)";
- ModuleVersion = "1.4.0.0";
- Name = "Security Group Management";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Failure";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::597::9::AuditPolicySubcategory";
- AuditFlag = "Failure";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Security Group Management (Failure)";
+ Name = "Security Group Management";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::597::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory31ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Removable Storage (Success)";
- ModuleVersion = "1.4.0.0";
- Name = "Removable Storage";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Success";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::606::9::AuditPolicySubcategory";
- AuditFlag = "Success";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Removable Storage (Success)";
+ Name = "Removable Storage";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::606::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory32ref
 {
-ResourceID = "[AuditPolicySubcategory]Audit Removable Storage (Failure)";
- ModuleVersion = "1.4.0.0";
- Name = "Removable Storage";
- Ensure = "Present";
+Ensure = "Present";
+ AuditFlag = "Failure";
  ModuleName = "AuditPolicyDsc";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::611::9::AuditPolicySubcategory";
- AuditFlag = "Failure";
+ ModuleVersion = "1.4.0.0";
+ ResourceID = "[AuditPolicySubcategory]Audit Removable Storage (Failure)";
+ Name = "Removable Storage";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::611::9::AuditPolicySubcategory";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_RegistryResource as $MSFT_RegistryResource1ref
 {
-Key = "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Wsearch";
- ResourceID = "[Registry]Disable Windows Search Service";
- ValueType = "DWord";
- ModuleVersion = "2.12.0.0";
- ValueName = "Start";
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Wsearch";
  ModuleName = "PSDscResources";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::622::10::Registry";
- Ensure = "Present";
+ ValueType = "DWord";
+ ValueName = "Start";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]Disable Windows Search Service";
  ValueData = {
     "4"
-};
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::622::10::Registry";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of MSFT_SecurityOption as $MSFT_SecurityOption1ref
 {
-ModuleName = "SecurityPolicyDsc";
- Microsoft_network_server_Digitally_sign_communications_if_client_agrees = "Enabled";
+ModuleVersion = "2.10.0.0";
  Interactive_logon_Do_not_display_last_user_name = "Enabled";
- User_Account_Control_Behavior_of_the_elevation_prompt_for_administrators_in_Admin_Approval_Mode = "Prompt for consent on the secure desktop";
  Name = "AccountSecurityOptions";
- Microsoft_network_server_Amount_of_idle_time_required_before_suspending_session = "15";
  Network_access_Remotely_accessible_registry_paths_and_subpaths = "System\\CurrentControlSet\\Control\\Print\\Printers|#|System\\CurrentControlSet\\Services\\Eventlog|#|Software\\Microsoft\\OLAP Server|#|Software\\Microsoft\\Windows NT\\CurrentVersion\\Print|#|Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows|#|System\\CurrentControlSet\\Control\\ContentIndex|#|System\\CurrentControlSet\\Control\\Terminal Server|#|System\\CurrentControlSet\\Control\\Terminal Server\\UserConfig|#|System\\CurrentControlSet\\Control\\Terminal Server\\DefaultUserConfiguration|#|Software\\Microsoft\\Windows NT\\CurrentVersion\\Perflib|#|System\\CurrentControlSet\\Services\\SysmonLog";
+ Devices_Allowed_to_format_and_eject_removable_media = "Administrators";
  Microsoft_network_server_Digitally_sign_communications_always = "Enabled";
- Network_access_Sharing_and_security_model_for_local_accounts = "Classic - Local users authenticate as themselves";
- Microsoft_network_server_Disconnect_clients_when_logon_hours_expire = "Enabled";
- Microsoft_network_client_Digitally_sign_communications_if_server_agrees = "Enabled";
- Devices_Allow_undock_without_having_to_log_on = "Disabled";
- Network_security_Allow_Local_System_to_use_computer_identity_for_NTLM = "Enabled";
- Microsoft_network_client_Digitally_sign_communications_always = "Enabled";
- Network_security_LDAP_client_signing_requirements = "Negotiate Signing";
- Network_security_Allow_LocalSystem_NULL_session_fallback = "Disabled";
- Accounts_Limit_local_account_use_of_blank_passwords_to_console_logon_only = "Enabled";
- Network_Security_Allow_PKU2U_authentication_requests_to_this_computer_to_use_online_identities = "Disabled";
  ResourceID = "[SecurityOption]AccountSecurityOptions";
- Network_access_Remotely_accessible_registry_paths = "System\\CurrentControlSet\\Control\\ProductOptions|#|System\\CurrentControlSet\\Control\\Server Applications|#|Software\\Microsoft\\Windows NT\\CurrentVersion";
- Microsoft_network_client_Send_unencrypted_password_to_third_party_SMB_servers = "Disabled";
- Devices_Prevent_users_from_installing_printer_drivers = "Enabled";
+ Network_access_Let_Everyone_permissions_apply_to_anonymous_users = "Disabled";
+ Shutdown_Allow_system_to_be_shut_down_without_having_to_log_on = "Disabled";
+ Microsoft_network_server_Amount_of_idle_time_required_before_suspending_session = "15";
+ Microsoft_network_client_Digitally_sign_communications_always = "Enabled";
  Network_security_Configure_encryption_types_allowed_for_Kerberos = {
     "DES_CBC_CRC",
     "DES_CBC_MD5",
@@ -852,14 +841,1660 @@ ModuleName = "SecurityPolicyDsc";
     "FUTURE"
 };
  System_settings_Use_Certificate_Rules_on_Windows_Executables_for_Software_Restriction_Policies = "Enabled";
- ModuleVersion = "2.10.0.0";
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::630::9::SecurityOption";
+ Accounts_Limit_local_account_use_of_blank_passwords_to_console_logon_only = "Enabled";
+ Microsoft_network_client_Send_unencrypted_password_to_third_party_SMB_servers = "Disabled";
+ Microsoft_network_server_Digitally_sign_communications_if_client_agrees = "Enabled";
+ User_Account_Control_Behavior_of_the_elevation_prompt_for_administrators_in_Admin_Approval_Mode = "Prompt for consent on the secure desktop";
  Interactive_logon_Do_not_require_CTRL_ALT_DEL = "Disabled";
  Audit_Force_audit_policy_subcategory_settings_Windows_Vista_or_later_to_override_audit_policy_category_settings = "Enabled";
- Devices_Allowed_to_format_and_eject_removable_media = "Administrators";
+ Microsoft_network_server_Disconnect_clients_when_logon_hours_expire = "Enabled";
+ Network_security_Allow_LocalSystem_NULL_session_fallback = "Disabled";
+ Network_access_Sharing_and_security_model_for_local_accounts = "Classic - Local users authenticate as themselves";
+ Network_Security_Allow_PKU2U_authentication_requests_to_this_computer_to_use_online_identities = "Disabled";
+ ModuleName = "SecurityPolicyDsc";
+ Network_security_Allow_Local_System_to_use_computer_identity_for_NTLM = "Enabled";
  Audit_Shut_down_system_immediately_if_unable_to_log_security_audits = "Disabled";
- Network_access_Let_Everyone_permissions_apply_to_anonymous_users = "Disabled";
- Shutdown_Allow_system_to_be_shut_down_without_having_to_log_on = "Disabled";
- SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::630::9::SecurityOption";
+ Microsoft_network_client_Digitally_sign_communications_if_server_agrees = "Enabled";
+ Network_access_Remotely_accessible_registry_paths = "System\\CurrentControlSet\\Control\\ProductOptions|#|System\\CurrentControlSet\\Control\\Server Applications|#|Software\\Microsoft\\Windows NT\\CurrentVersion";
+ Devices_Allow_undock_without_having_to_log_on = "Disabled";
+ Network_security_LDAP_client_signing_requirements = "Negotiate Signing";
+ Devices_Prevent_users_from_installing_printer_drivers = "Enabled";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource2ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\Kerberos\\Parameters";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "SupportedEncryptionTypes";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]SupportedEncryptionTypes";
+ ValueData = {
+    "2147483644"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::782::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource3ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowCortanaAboveLock";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowCortanaAboveLock";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::795::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource4ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa";
+ ModuleName = "PSDscResources";
+ ValueType = "String";
+ ValueName = "RestrictRemoteSam";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]RestrictRemoteSam";
+ ValueData = {
+    "O:BAG:BAD:(A;;RC;;;BA)"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::806::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource5ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\LanManServer\\Parameters";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NullSessionShares";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NullSessionShares";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::817::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource6ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "LmCompatibilityLevel";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]LmCompatibilityLevel";
+ ValueData = {
+    "5"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::828::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource7ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NTLMMinServerSec";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NTLMMinServerSec";
+ ValueData = {
+    "537395200"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::839::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource8ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NTLMMinClientSec";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NTLMMinClientSec";
+ ValueData = {
+    "537395200"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::850::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource9ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowLocalIPsecPolicyMerge";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowLocalIPsecPolicyMergeDomain";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::863::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource10ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableUIADesktopToggle";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableUIADesktopToggle";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::874::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource11ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowCortana";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowCortana";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::885::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource12ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Real-Time Protection";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableBehaviorMonitoring";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableBehaviorMonitoring";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::896::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource13ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\SpyNet";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "SubmitSamplesConsent";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]SubmitSamplesConsent";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::907::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource14ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Scan";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableRemovableDriveScanning";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableRemovableDriveScanning";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::918::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource15ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\TerminalServer\\WinStations\\RDP-Tcp";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "PortNumber";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]PortNumber";
+ ValueData = {
+    "3389"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::929::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource16ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowSearchToUseLocation";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowSearchToUseLocation";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::940::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource17ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\InputPersonalization";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowInputPersonalization";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowInputPersonalization";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::954::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource18ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager\\Memory Management";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "ClearPageFileAtShutdown";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]ClearPageFileAtShutdown";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::965::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource19ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Setup\\RecoveryConsole\\SetCommand";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowAllPaths";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowAllPaths";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::976::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource20ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "ConsentPromptBehaviorUser";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]ConsentPromptBehaviorUser";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::987::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource21ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Signature Updates";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "SignatureUpdateInterval";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]SignatureUpdateInterval";
+ ValueData = {
+    "8"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1000::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource22ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowLocalIPsecPolicyMerge";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowLocalIPsecPolicyMergePrivate";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1011::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource23ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableUnicastResponsesToMulticastBroadcast";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableUnicastResponsesToMulticastBroadcastPrivate";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1023::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource24ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableUnicastResponsesToMulticastBroadcast";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableUnicastResponsesToMulticastBroadcastDomain";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1034::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource25ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableUnicastResponsesToMulticastBroadcast";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableUnicastResponsesToMulticastBroadcastPublic";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1041::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource26ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowLocalPolicyMerge";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowLocalPolicyMergePrivate";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1051::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource27ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Rpc";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableAuthEpResolution";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableAuthEpResolution";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1062::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource28ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\W32Time\\TimeProviders\\NtpClient";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "Enabled";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NTPClientEnabled";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1073::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource29ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\CredUI";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnumerateAdministrators";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnumerateAdministrators";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1084::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource30ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\Audit";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "ProcessCreationIncludeCmdLine_Enabled";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]ProcessCreationIncludeCmdLine_Enabled";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1095::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource31ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\WinRM\\Client";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowBasic";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowBasic";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1107::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource32ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WcmSvc\\GroupPolicy";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "fMinimizeConnections";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]fMinimizeConnections";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1119::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource33ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableAutomaticRestartSignOn";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableAutomaticRestartSignOn";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1132::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource34ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\EventLog\\Setup";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "MaxSize";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]MaxSizeSetupLog";
+ ValueData = {
+    "32768"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1143::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource35ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\EventLog\\Setup";
+ ModuleName = "PSDscResources";
+ ValueType = "String";
+ ValueName = "Retention";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]RetentionSetupLog";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1154::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource36ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NoAutorun";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NoAutorun";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1165::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource37ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\EventLog\\Security";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "MaxSize";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]MaxSizeSecurityLog";
+ ValueData = {
+    "196700"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1176::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource38ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\EventLog\\Security";
+ ModuleName = "PSDscResources";
+ ValueType = "String";
+ ValueName = "Retention";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]RetentionSecurityLog";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1187::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource39ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Network Connections";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NC_AllowNetBridge_NLA";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NC_AllowNetBridge_NLA";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1198::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource40ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NoLockScreenSlideshow";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NoLockScreenSlideshow";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1209::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource41ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NoLockScreenCamera";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NoLockScreenCamera";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1220::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource42ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Feeds";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableEnclosureDownload";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableEnclosureDownload";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1231::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource43ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NoLMHash";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NoLMHash";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1244::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource44ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableCdp";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableCdp";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1257::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource45ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "OfferRemoteAssistance";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]OfferRemoteAssistance";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1268::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource46ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Policies\\EarlyLaunch";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DriverLoadPolicy";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DriverLoadPolicy";
+ ValueData = {
+    "3"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1279::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource47ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\EventLog\\Application";
+ ModuleName = "PSDscResources";
+ ValueType = "String";
+ ValueName = "Retention";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]RetentionApplicationLog";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1292::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource48ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Service";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableRunAs";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableRunAs";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1305::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource49ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\WinRM\\Client";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowDigest";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowDigest";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1316::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource50ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Explorer";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NoAutoplayfornonVolume";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NoAutoplayfornonVolume";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1329::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource51ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "MSAOptional";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]MSAOptional";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1340::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource52ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowIndexingEncryptedStoresOrItems";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowIndexingEncryptedStoresOrItems";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1351::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource53ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "BlockUserFromShowingAccountDetailsOnSignin";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]BlockUserFromSh owingAccountDetailsOnSignin";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1362::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource54ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "RestrictAnonymousSAM";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]RestrictAnonymousSAM";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1373::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource55ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "RestrictAnonymous";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]RestrictAnonymous";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1384::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource56ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "fEncryptRPCTraffic";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]fEncryptRPCTraffic";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1395::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource57ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Network Connections";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NC_PersonalFirewallConfig";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NC_PersonalFirewallConfig";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1407::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource58ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CredUI";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisablePasswordReveal";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisablePasswordReveal";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1420::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource59ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "MinEncryptionLevel";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]MinEncryptionLevel";
+ ValueData = {
+    "3"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1431::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource60ref
+{
+Ensure = "Present";
+ Key = "HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\Windows\\Installer";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AlwaysInstallElevated";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AlwaysInstallElevated";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1444::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource61ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Installer";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableUserControl";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableUserControl";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1455::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource62ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\WinRM\\Client";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowUnencryptedTraffic";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowUnencryptedTraffic";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1466::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource63ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowTelemetry";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowTelemetry";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1477::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource64ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisablePasswordSaving";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisablePasswordSaving";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1488::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource65ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DeleteTempDirsOnExit";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DeleteTempDirsOnExit";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1499::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource66ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DontDisplayNetworkSelectionUI";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DontDisplayNetworkSelectionUI";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1510::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource67ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "fPromptForPassword";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]fPromptForPassword";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1521::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource68ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\EventLog\\Application";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "MaxSize";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]MaxSizeApplication";
+ ValueData = {
+    "32768"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1534::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource69ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DoNotShowFeedbackNotifications";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DoNotShowFeedbackNotifications";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1545::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource70ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "PerSessionTempDir";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]PerSessionTempDir";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1556::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource71ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\LanmanWorkstation";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowInsecureGuestAuth";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowInsecureGuestAuth";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1567::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource72ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanManServer\\Parameters";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "RestrictNullSessAccess";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]RestrictNullSessAccess";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1578::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource73ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowDomainPINLogon";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowDomainPINLogon";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1589::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource74ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "FilterAdministratorToken";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]FilterAdministratorToken";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1600::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource75ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowLocalPolicyMerge";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowLocalPolicyMergePublic";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1612::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource76ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableFirewall";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableFirewallPrivate";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1625::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource77ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "AllowLocalIPsecPolicyMerge";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]AllowLocalIPsecPolicyMergePublic";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1636::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource78ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "UserAuthentication";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]UserAuthentication";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1647::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource79ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "turuoffNotifications";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]turuoffNotifications";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1658::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource80ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NoDriveTypeAutoRun";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NoDriveTypeAutoRun";
+ ValueData = {
+    "255"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1669::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource81ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile\\DefaultOutboundAction";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "OutboundActionDefault";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]OutboundActionDefaultDomain";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1680::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource82ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableNotifications";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableNotificationsPrivate";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1691::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource83ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableNotifications";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableNotificationsPublic";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1700::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource84ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsNT\\Printers";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableWebPnPDownload";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableWebPnPDownload";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1711::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource85ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableVirtualization";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableVirtualization";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1722::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource86ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "PromptOnSecureDesktop";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]PromptOnSecureDesktop";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1733::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource87ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableLUA";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableLUA";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1744::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource88ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableInstallerDetection";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableInstallerDetection";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1755::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource89ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableFirewall";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableFirewallDomain";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1767::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource90ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Explorer";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NoDataExecutionPrevention";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NoDataExecutionPrevention";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1778::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource91ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableLockScreenAppNotifications";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableLockScreenAppNotifications";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1789::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource92ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\EventLog\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "MaxSize";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]MaxSizeSystemLog";
+ ValueData = {
+    "32768"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1800::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource93ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\EventLog\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "String";
+ ValueName = "Retention";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]RetentionSystemLog";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1812::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource94ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "ProtectionMode";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]ProtectionMode";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1823::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource95ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Kernel";
+ ModuleName = "PSDscResources";
+ ValueType = "String";
+ ValueName = "ObCaseInsensitiv";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]ObCaseInsensitive";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1834::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource96ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableFirewall";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableFirewallPublic";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1845::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource97ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "OutboundAction";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]OutboundAction";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1856::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource98ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DefaultOutboundAction";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]OutboundActionDefaultPublic";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1867::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource99ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DefaultOutboundAction";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DefaultOutboundAction";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1879::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource100ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Explorer";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "NoHeapTerminationOnCorruption";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]NoHeapTerminationOnCorruption";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1890::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource101ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile\\DisableNotifications";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "OffNotifications";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]OffNotifications";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1901::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource102ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Internet Connection Wizard";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "ExitOnMSICW";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]ExitOnMSICW";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1912::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource103ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "DisableWindowsConsumerFeatures";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]DisableWindowsConsumerFeatures";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1923::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource104ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\DNSClient";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableMulticast";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableMulticast";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1934::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource105ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explore r";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "PreXPSP2ShellProtocolBehavior";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]PreXPSP2ShellProtocolBehavior";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1945::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource106ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableSecureUIAPaths";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableSecureUIAPaths";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1956::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource107ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "EnableSmartScreen";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]EnableSmartScreen";
+ ValueData = {
+    "1"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1967::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource108ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "fAllowToGetHelp";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]fAllowToGetHelp";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1978::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource109ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Spynet";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "LocalSettingOverrideSpynetReporting";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]LocalSettingOverrideSpynetReporting";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::1989::5::Registry";
+ ConfigurationName = "AzureBaselineDscWindows2019";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource110ref
+{
+Ensure = "Present";
+ Key = "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters";
+ ModuleName = "PSDscResources";
+ ValueType = "DWord";
+ ValueName = "SMB1";
+ ModuleVersion = "2.12.0.0";
+ ResourceID = "[Registry]SMB1";
+ ValueData = {
+    "0"
+};
+ SourceInfo = "D:\\OneDrive - Microsoft\\Github_repo\\azurewindowsbaseline\\AzureBaselineDscWindows2019.ps1::2000::5::Registry";
  ConfigurationName = "AzureBaselineDscWindows2019";
 };
 instance of OMI_ConfigurationDocument
@@ -873,7 +2508,7 @@ instance of OMI_ConfigurationDocument
 
                         Author="sergeype";
 
-                        GenerationDate="12/30/2024 14:42:51";
+                        GenerationDate="12/31/2024 13:17:17";
 
                         GenerationHost="GIGA2GBNVME2023";
 
